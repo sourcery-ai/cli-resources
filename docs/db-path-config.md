@@ -50,6 +50,8 @@ export APP_NAME_DB_PATH=$HOME/dev-app-name.db
 
 ## Using a Temporary Database for Tests
 
+Use a db in `tmpdir`.
+
 ```python
 from pathlib import Path
 
