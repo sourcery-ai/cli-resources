@@ -7,8 +7,6 @@ theme:
     - search.share
     - search.suggest
     - navigation.indexes
-    - navigation.tabs
-    - navigation.tabs.sticky
     - toc.follow
 plugins: 
   - search

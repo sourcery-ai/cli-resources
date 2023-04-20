@@ -1,3 +1,7 @@
+---
+title: Sourcery CLI Resources
+---
+
 Code examples & design patterns for Python CLI applications.
 
 ## Libraries Used
