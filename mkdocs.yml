@@ -1,0 +1,29 @@
+site_name: Sourcery CLI Resources
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - content.code.copy
+    - search.share
+    - search.suggest
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.follow
+plugins: 
+  - search
+  - tags:
+      tags_file: tags.md
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
