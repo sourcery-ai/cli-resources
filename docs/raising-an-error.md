@@ -2,6 +2,7 @@
 title: Raising an Error in Typer
 tags:
 - error-handling 
+- consistency
 ---
 
 ## Overview
@@ -68,3 +69,8 @@ def test_view_not_existing_talk():
     assert not result.stdout
     assert result.stderr == "Talk with ID 42 not found.\n"
 ```
+
+## More Info
+
+* [`typer.Exit` docs](https://typer.tiangolo.com/tutorial/terminating/#exit-with-an-error)
+* [CLIG Guidelines / The Basics](https://clig.dev/#the-basics)

@@ -42,6 +42,11 @@ class Settings(BaseSettings):
 settings: Settings = Settings()
 ```
 
+Instead of `Path.home()`, you can also use a more sophisticated default value:
+
+* [`typer.get_app_dir()`](https://typer.tiangolo.com/tutorial/app-dir/)
+* [platformdirs library](https://pypi.org/project/platformdirs/)
+
 ## Setting a Development Database
 
 ```
@@ -64,3 +69,8 @@ from app_name import config
 def app_db_path(tmpdir):
     config.settings.db_path = Path(tmpdir / "test-app-name.db")
 ```
+
+## More Info
+
+* [Pydantic / Settings Management](https://docs.pydantic.dev/usage/settings/)
+* [`tmpdir`](https://docs.pytest.org/en/7.1.x/reference/reference.html#std-fixture-tmpdir)
