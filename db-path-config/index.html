@@ -12,7 +12,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../raising-an-error/">
+        <link rel="next" href="../help-no-subcommand/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
@@ -264,10 +264,62 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#more-info" class="md-nav__link">
+    More Info
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help-no-subcommand/" class="md-nav__link">
+        Show Help for Missing Subcommand
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interactivity/" class="md-nav__link">
+        Interactive Input
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pytest-fixture-for-test-objects/" class="md-nav__link">
+        Use pytest Fixtures for Creating Test Objects
+      </a>
     </li>
   
 
@@ -295,8 +347,38 @@
   
   
     <li class="md-nav__item">
+      <a href="../re-using-options/" class="md-nav__link">
+        Re-using Typer Options
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../tags/" class="md-nav__link">
         Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typer-testing-clirunner/" class="md-nav__link">
+        Using `typer.testing.CliRunner`
       </a>
     </li>
   
@@ -350,6 +432,13 @@
         <li class="md-nav__item">
   <a href="#using-a-temporary-database-for-tests" class="md-nav__link">
     Using a Temporary Database for Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-info" class="md-nav__link">
+    More Info
   </a>
   
 </li>
@@ -416,6 +505,11 @@
 </span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
 </span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="n">settings</span><span class="p">:</span> <span class="n">Settings</span> <span class="o">=</span> <span class="n">Settings</span><span class="p">()</span>
 </span></code></pre></div>
+<p>Instead of <code>Path.home()</code>, you can also use a more sophisticated default value:</p>
+<ul>
+<li><a href="https://typer.tiangolo.com/tutorial/app-dir/"><code>typer.get_app_dir()</code></a></li>
+<li><a href="https://pypi.org/project/platformdirs/">platformdirs library</a></li>
+</ul>
 <h2 id="setting-a-development-database">Setting a Development Database</h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>export APP_NAME_DB_PATH=$HOME/dev-app-name.db
 </span></code></pre></div>
@@ -432,6 +526,11 @@
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">def</span> <span class="nf">app_db_path</span><span class="p">(</span><span class="n">tmpdir</span><span class="p">):</span>
 </span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">config</span><span class="o">.</span><span class="n">settings</span><span class="o">.</span><span class="n">db_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">tmpdir</span> <span class="o">/</span> <span class="s2">&quot;test-app-name.db&quot;</span><span class="p">)</span>
 </span></code></pre></div>
+<h2 id="more-info">More Info</h2>
+<ul>
+<li><a href="https://docs.pydantic.dev/usage/settings/">Pydantic / Settings Management</a></li>
+<li><a href="https://docs.pytest.org/en/7.1.x/reference/reference.html#std-fixture-tmpdir"><code>tmpdir</code></a></li>
+</ul>
 
 
 

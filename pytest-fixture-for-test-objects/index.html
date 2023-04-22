@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../re-using-options/">
+        <link rel="prev" href="../interactivity/">
       
       
-        <link rel="next" href="../typer-testing-clirunner/">
+        <link rel="next" href="../raising-an-error/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
     
     
       
-        <title>Tags - Sourcery CLI Resources</title>
+        <title>Use pytest Fixtures for Creating Test Objects - Sourcery CLI Resources</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tags" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tags
+              Use pytest Fixtures for Creating Test Objects
             
           </span>
         </div>
@@ -250,11 +250,69 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pytest-fixture-for-test-objects/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Use pytest Fixtures for Creating Test Objects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Use pytest Fixtures for Creating Test Objects
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitfall" class="md-nav__link">
+    Pitfall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-info" class="md-nav__link">
+    More Info
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -295,80 +353,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Tags
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
         Tags
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consistency" class="md-nav__link">
-    consistency
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    error-handling
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#robustness" class="md-nav__link">
-    robustness
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    testing
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -405,8 +394,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -415,36 +402,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    configuration
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#consistency" class="md-nav__link">
-    consistency
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    error-handling
+  <a href="#pitfall" class="md-nav__link">
+    Pitfall
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#robustness" class="md-nav__link">
-    robustness
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    testing
+  <a href="#more-info" class="md-nav__link">
+    More Info
   </a>
   
 </li>
@@ -464,33 +444,59 @@
                   
   
 
+  <nav class="md-tags" >
+    
+      
+      
+        <a href="../tags/#testing" class="md-tag">testing</a>
+      
+    
+  </nav>
 
 
 
-<h1 id="tags">Tags</h1>
-<p>Following is a list of tags:</p>
-<h2 id="configuration"><span class="md-tag">configuration</span></h2>
+
+  <h1>Use pytest Fixtures for Creating Test Objects</h1>
+
+<h2 id="overview">Overview</h2>
+<p>If a test needs one or more objects, provide them via pytest fixtures.</p>
+<p>Do not run multiple <code>invoke</code>s of <code>typer.testing.CliRunner</code> in one test.</p>
+<h2 id="example">Example</h2>
+<p>Fixture:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">()</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">def</span> <span class="nf">create_basic_talk</span><span class="p">():</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">return</span> <span class="n">talk_crud</span><span class="p">()</span><span class="o">.</span><span class="n">create</span><span class="p">({</span><span class="s2">&quot;short_name&quot;</span><span class="p">:</span> <span class="s2">&quot;error-messages&quot;</span><span class="p">})</span>
+</span></code></pre></div>
+<p>Test function:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">test_existing_by_id</span><span class="p">(</span><span class="n">create_basic_talk</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">runner</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;talk&quot;</span><span class="p">,</span> <span class="s2">&quot;view&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">create_basic_talk</span><span class="o">.</span><span class="n">id_</span><span class="p">)])</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">exit_code</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span>
+</span></code></pre></div>
+<p>This provides a clear separation between the different phases of the test:</p>
 <ul>
-<li><a href="../db-path-config/">Configure the Path of a SQLite Database</a></li>
+<li>arrange</li>
+<li>act</li>
+<li>assert</li>
 </ul>
-<h2 id="consistency"><span class="md-tag">consistency</span></h2>
+<h2 id="pitfall">Pitfall</h2>
+<p>Another possibility would be to invoke the <code>create</code> command in the test before invoking the "command under test" <code>view</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span> <span class="nf">test_existing_by_id</span><span class="p">(</span><span class="n">create_basic_talk</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">runner</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;talk&quot;</span><span class="p">,</span> <span class="s2">&quot;create&quot;</span><span class="p">,</span> <span class="s2">&quot;--short-name&quot;</span><span class="p">,</span> <span class="s2">&quot;some-name&quot;</span><span class="p">]</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">runner</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;talk&quot;</span><span class="p">,</span> <span class="s2">&quot;view&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">create_basic_talk</span><span class="o">.</span><span class="n">id_</span><span class="p">)])</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">exit_code</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">assert</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span>
+</span></code></pre></div>
+<p>Drawback: If the <code>create</code> command fails, the <code>invoke</code> is still successful and proceeds to the next step.</p>
+<p>=&gt;</p>
+<p>The invoking of the <code>view</code> command will fail, which is misleading. (The <code>create</code> command has an error, but the test fails in the <code>view</code> step.)</p>
+<h2 id="more-info">More Info</h2>
 <ul>
-<li><a href="../raising-an-error/">Raising an Error in Typer</a></li>
-<li><a href="../re-using-options/">Re-using Typer Options</a></li>
-</ul>
-<h2 id="error-handling"><span class="md-tag">error-handling</span></h2>
-<ul>
-<li><a href="../raising-an-error/">Raising an Error in Typer</a></li>
-</ul>
-<h2 id="robustness"><span class="md-tag">robustness</span></h2>
-<ul>
-<li><a href="../help-no-subcommand/">Show Help for Missing Subcommand</a></li>
-<li><a href="../interactivity/">Interactive Input</a></li>
-</ul>
-<h2 id="testing"><span class="md-tag">testing</span></h2>
-<ul>
-<li><a href="../pytest-fixture-for-test-objects/">Use pytest Fixtures for Creating Test Objects</a></li>
-<li><a href="../typer-testing-clirunner/">Using <code>typer.testing.CliRunner</code></a></li>
+<li><a href="https://docs.pytest.org/en/7.1.x/explanation/fixtures.html#about-fixtures">About pytest Fixtures</a></li>
+<li><a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/">AAA Arrange-Act-Assert Pattern</a></li>
 </ul>
 
 
