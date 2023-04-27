@@ -39,7 +39,9 @@ CLIG's recommendation regarding short names:
 
 ## `bool` Option with Multiple Aliases
 
-A `bool` option with 2 names both for the `True` and the `False` value:
+By default, a `bool` option defines one name for the `True` value and one for the `False` value. see [Bool Option](bool-option.md)
+
+You can also define a `bool` option with 2 names both for the `True` and the `False` value:
 
 ```python
 @app.command()
