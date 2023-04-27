@@ -1,6 +1,7 @@
 ---
 tags: 
 - consistency
+- option
 title: Re-using Typer Options
 ---
 
