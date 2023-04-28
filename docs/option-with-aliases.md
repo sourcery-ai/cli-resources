@@ -1,6 +1,7 @@
 ---
 tags:
 - option
+- naming
 ---
 
 ## Overview

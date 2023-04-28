@@ -2,6 +2,7 @@
 tags: 
 - consistency
 - option
+- naming
 title: Re-using Typer Options
 ---
 
