@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../stdout-vs-stderr/">
+        <link rel="prev" href="../re-using-options/">
       
       
-        <link rel="next" href="../typer-testing-clirunner/">
+        <link rel="next" href="../tags/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
     
     
       
-        <title>Tags - Sourcery CLI Resources</title>
+        <title>Stdout vs stderr - Sourcery CLI Resources</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tags" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tags
+              Stdout vs stderr
             
           </span>
         </div>
@@ -355,11 +355,76 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../stdout-vs-stderr/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Stdout vs stderr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Stdout vs stderr
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printing-to-stdout-vs-stderr-with-rich" class="md-nav__link">
+    Printing to stdout vs stderr with Rich
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteration-vs-keeping-the-interface-stable" class="md-nav__link">
+    Iteration vs Keeping the Interface Stable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-info" class="md-nav__link">
+    More Info
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -370,108 +435,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Tags
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
         Tags
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#command" class="md-nav__link">
-    command
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consistency" class="md-nav__link">
-    consistency
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    error-handling
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    interface
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#naming" class="md-nav__link">
-    naming
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#option" class="md-nav__link">
-    option
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#robustness" class="md-nav__link">
-    robustness
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    testing
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -508,8 +476,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -518,64 +484,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#command" class="md-nav__link">
-    command
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consistency" class="md-nav__link">
-    consistency
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    error-handling
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    interface
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#naming" class="md-nav__link">
-    naming
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#option" class="md-nav__link">
-    option
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#robustness" class="md-nav__link">
-    robustness
+  <a href="#printing-to-stdout-vs-stderr-with-rich" class="md-nav__link">
+    Printing to stdout vs stderr with Rich
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#testing" class="md-nav__link">
-    testing
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteration-vs-keeping-the-interface-stable" class="md-nav__link">
+    Iteration vs Keeping the Interface Stable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-info" class="md-nav__link">
+    More Info
   </a>
   
 </li>
@@ -595,56 +533,67 @@
                   
   
 
+  <nav class="md-tags" >
+    
+      
+      
+        <a href="../tags/#interface" class="md-tag">interface</a>
+      
+    
+  </nav>
 
 
 
-<h1 id="tags">Tags</h1>
-<p>Following is a list of tags:</p>
-<h2 id="command"><span class="md-tag">command</span></h2>
+
+  <h1>Stdout vs stderr</h1>
+
+<h2 id="overview">Overview</h2>
+<p>When code prints things, it actually writes to one of two virtual files: "standard output" or "standard error".</p>
 <ul>
-<li><a href="../command-alias/">Command alias</a></li>
-<li><a href="../command-custom-name/">Command custom name</a></li>
+<li>For a human user, there's usually no difference: Both <code>stdout</code> and <code>stderr</code> are visible on the terminal.</li>
+<li>For machines, there's a difference: A script consuming the output of your script "sees" only <code>stdout</code>.</li>
 </ul>
-<h2 id="configuration"><span class="md-tag">configuration</span></h2>
+<p>Distinguishing between <code>stdout</code> and <code>stderr</code>, is one of the <a href="https://clig.dev/#the-basics">Basics recommended by the CLIG</a></p>
+<p>TLDR</p>
 <ul>
-<li><a href="../db-path-config/">Configure the Path of a SQLite Database</a></li>
+<li>Send output that can be piped and consumed by a next script to <code>stdout</code>.</li>
+<li>Send everything else, especially errors and log messages to <code>stderr</code>.</li>
 </ul>
-<h2 id="consistency"><span class="md-tag">consistency</span></h2>
+<p>For more explanation, on <code>stdout</code> and <code>stderr</code>, see also the <a href="https://typer.tiangolo.com/tutorial/printing/#standard-output-and-standard-error">Typer Docs</a></p>
+<h2 id="printing-to-stdout-vs-stderr-with-rich">Printing to <code>stdout</code> vs <code>stderr</code> with Rich</h2>
+<p>In Rich, you use a <code>rich.console.Console</code> object for printing.</p>
 <ul>
-<li><a href="../raising-an-error/">Raising an Error in Typer</a></li>
-<li><a href="../re-using-options/">Re-using Typer Options</a></li>
+<li>By default, it prints to <code>stdout</code>.</li>
+<li>You can initialize the <code>Console</code> with <code>stderr=True</code>, so that it prints to <code>stderr</code>.</li>
 </ul>
-<h2 id="error-handling"><span class="md-tag">error-handling</span></h2>
+<p>After creating a talk, print:</p>
 <ul>
-<li><a href="../raising-an-error/">Raising an Error in Typer</a></li>
+<li>the talk ID to <code>stdout</code></li>
+<li>a logging message to <code>stderr</code></li>
 </ul>
-<h2 id="interface"><span class="md-tag">interface</span></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">rich.console</span> <span class="kn">import</span> <span class="n">Console</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">stdout_console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">stderr_console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">(</span><span class="n">stderr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">stdout_console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">talk</span><span class="o">.</span><span class="n">talk_id</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">stderr_console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;New talk created. 🪅&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="testing">Testing</h2>
+<p>For tests with <code>typer.testing.CliRunner</code>, it's recommended to verify the content of <code>stdout</code> and <code>stdin</code> separately.</p>
+<p>In order to do that, you need to initialize the <code>typer.testing.CliRunner</code> instance with <code>mix_stderr=False</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">runner</span> <span class="o">=</span> <span class="n">CliRunner</span><span class="p">(</span><span class="n">mix_stderr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="iteration-vs-keeping-the-interface-stable">Iteration vs Keeping the Interface Stable</h2>
+<blockquote>
+<p>Changing output for humans is usually OK. The only way to make an interface easy to use is to iterate on it, and if the output is considered an interface, then you can’t iterate on it. Encourage your users to use --plain or --json in scripts to keep output stable (see Output).</p>
+</blockquote>
+<p><a href="https://clig.dev/#future-proofing">CLIG Guidelines / Future-proofing</a></p>
+<h2 id="more-info">More Info</h2>
 <ul>
-<li><a href="../stdout-vs-stderr/">Stdout vs stderr</a></li>
-</ul>
-<h2 id="naming"><span class="md-tag">naming</span></h2>
-<ul>
-<li><a href="../command-alias/">Command alias</a></li>
-<li><a href="../command-custom-name/">Command custom name</a></li>
-<li><a href="../option-with-aliases/">Option with aliases</a></li>
-<li><a href="../re-using-options/">Re-using Typer Options</a></li>
-</ul>
-<h2 id="option"><span class="md-tag">option</span></h2>
-<ul>
-<li><a href="../bool-option/">Bool option</a></li>
-<li><a href="../interactivity/">Interactive Input</a></li>
-<li><a href="../option-with-aliases/">Option with aliases</a></li>
-<li><a href="../re-using-options/">Re-using Typer Options</a></li>
-</ul>
-<h2 id="robustness"><span class="md-tag">robustness</span></h2>
-<ul>
-<li><a href="../help-no-subcommand/">Show Help for Missing Subcommand</a></li>
-<li><a href="../interactivity/">Interactive Input</a></li>
-</ul>
-<h2 id="testing"><span class="md-tag">testing</span></h2>
-<ul>
-<li><a href="../pytest-fixture-for-test-objects/">Use pytest Fixtures for Creating Test Objects</a></li>
-<li><a href="../typer-testing-clirunner/">Using <code>typer.testing.CliRunner</code></a></li>
+<li><a href="https://typer.tiangolo.com/tutorial/printing/#standard-output-and-standard-error">Typer Docs / Printing and Colors / "Standard Output" and "Standard Error"</a></li>
+<li><a href="https://clig.dev/#the-basics">CLIG Guidelines / Basics</a></li>
+<li><a href="https://clig.dev/#future-proofing">CLIG Guidelines / Future-proofing</a></li>
 </ul>
 
 
